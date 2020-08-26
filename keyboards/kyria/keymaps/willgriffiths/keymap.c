@@ -163,9 +163,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 copy_paste_timer = timer_read();
             } else {
                 if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {  // Hold, copy
-                    tap_code16(LCTL(KC_C));
+                    tap_code16(LGUI(KC_C));
                 } else { // Tap, paste
-                    tap_code16(LCTL(KC_V));
+                    tap_code16(LGUI(KC_V));
                 }
             }
             break;
