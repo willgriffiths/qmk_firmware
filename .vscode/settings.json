@@ -9,6 +9,7 @@
         "**/*.bin": true,
         "**/*.uf2": true
     },
+    "files.include": ["${workspaceFolder}/*", "${workspaceFolder}/**"],
     "files.associations": {
         "*.h": "c",
         "*.c": "c",
@@ -28,7 +29,5 @@
     "[json]": {
         "editor.formatOnSave": false
     },
-    "clangd.arguments": [
-        "--header-insertion=never"
-    ]
+    "clangd.arguments": ["--header-insertion=never"]
 }
